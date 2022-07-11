@@ -1,0 +1,118 @@
+@media only screen and (max-width: 480px) {
+    .wrapper { width: 90%; }
+
+    header {
+        .wrapper {
+            nav {
+                ul {
+                    a { font-size: 14px;  }
+                }
+            }
+        }
+    }
+
+    .banner {
+        .wrapper {
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            
+            .banner-text {
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                a {
+                    padding: 6px 20px; 
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    .manga {
+        .wrapper {
+            div {
+                h3 { font-size: 16px; }
+                p { 
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                a {
+                    padding: 6px 20px;
+                    font-size: 11px;
+                }
+            }
+
+            ul {
+                li {
+                    &:not(:last-child) { margin-bottom: 18px; }
+                    p { 
+                        font-size: 12px;
+                        line-height: 18px; 
+                    }
+                }
+            }
+        }
+    }
+
+    .gallary {
+        .wrapper {
+            ul {
+                li {
+                    img { width: 100%; }
+
+                    div {
+                        h4 { font-size: 14px; }
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                        a {
+                            padding: 6px 20px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            a {
+                padding: 6px 20px;
+                font-size: 11px;
+            }
+        }
+    }
+
+    .locations {
+        .wrapper {
+            .malesuada {
+                h3 { font-size: 16px; }
+                p { 
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                form {
+                    .button {
+                        button {
+                            padding: 6px 20px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    a { font-size: 14px; }
+                    address { font-size: 14px; }
+                }
+            }
+        }
+    }
+
+    footer {
+        p { font-size: 14px; }
+    }
+}

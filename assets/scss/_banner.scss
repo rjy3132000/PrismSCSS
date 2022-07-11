@@ -1,0 +1,44 @@
+
+.banner {
+    padding: 175px 0 80px;
+    background:linear-gradient(to right,#5f4578, #763f7b);
+    color: #fff;
+
+    .wrapper {
+        display: flex;
+
+        h2 {
+            border-right: 1px solid rgba(255,255,255,.1);
+            flex-basis: 47%;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 45px;
+
+            span { text-transform: uppercase; }
+        }
+
+        .banner-text {
+            margin-left: 6%;
+            flex-basis: 47%;
+
+            p {
+                color: rgba(255,255,255,.5);
+                font-weight: 500;
+                line-height: 24px;
+            }
+
+            a {
+                padding: 10px 30px;
+                margin-top: 20px;
+                background-color: #49bd8b;
+                color: #f0f0f0;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: .8px;
+                border-radius: 20px;
+                transition: .5s ease-in;
+            }
+        }
+    }
+}

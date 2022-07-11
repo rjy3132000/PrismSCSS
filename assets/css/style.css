@@ -1,0 +1,741 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 65.3%;
+  margin: 0 auto;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+header .wrapper nav .hamburger, header .wrapper nav .hamburger span {
+  display: none;
+}
+
+header {
+  padding: 10px 0;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .wrapper nav .hamburger::before {
+  content: "\f0c9";
+  font-size: 20px;
+  font-family: "fontawesome";
+}
+
+header .wrapper nav ul a {
+  padding: 5px 12px;
+  background-color: transparent;
+  color: #000;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: .5s ease-in;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+/*=================================
+  main styling starts here
+=================================*/
+/* Banner Styling Start From Here */
+.banner {
+  padding: 175px 0 80px;
+  background: linear-gradient(to right, #5f4578, #763f7b);
+  color: #fff;
+}
+
+.banner .wrapper {
+  display: flex;
+}
+
+.banner .wrapper h2 {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  flex-basis: 47%;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 45px;
+}
+
+.banner .wrapper h2 span {
+  text-transform: uppercase;
+}
+
+.banner .wrapper .banner-text {
+  margin-left: 6%;
+  flex-basis: 47%;
+}
+
+.banner .wrapper .banner-text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.banner .wrapper .banner-text a {
+  padding: 10px 30px;
+  margin-top: 20px;
+  background-color: #49bd8b;
+  color: #f0f0f0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  border-radius: 20px;
+  transition: .5s ease-in;
+}
+
+/* Banner Styling End From Here */
+/* manga Styling Start From Here */
+.manga {
+  padding: 60px 0 65px;
+}
+
+.manga .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manga .wrapper div {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  flex-basis: 47%;
+}
+
+.manga .wrapper div h3 {
+  color: #666666;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.manga .wrapper div h3::first-letter {
+  text-transform: uppercase;
+}
+
+.manga .wrapper div p {
+  padding-right: 9%;
+  margin: 32px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.manga .wrapper div a {
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  border-radius: 20px;
+  transition: .5s ease-in;
+}
+
+.manga .wrapper ul {
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 47%;
+}
+
+.manga .wrapper ul li p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.manga .wrapper ul li p::before {
+  content: "\f00c";
+  margin-right: 10px;
+  color: #49bd8b;
+  font-family: "fontawesome";
+}
+
+.manga .wrapper ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* manga Styling End From Here */
+/* gallary Styling Start From Here */
+.gallary {
+  padding: 65px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+}
+
+.gallary .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallary .wrapper ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.gallary .wrapper ul li img {
+  width: auto;
+}
+
+.gallary .wrapper ul li div {
+  margin-left: 4%;
+}
+
+.gallary .wrapper ul li div h4 {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.gallary .wrapper ul li div p {
+  margin: 30px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallary .wrapper ul li div a {
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  border-radius: 20px;
+  transition: .5s ease-in;
+}
+
+.gallary .wrapper ul li:not(:last-child) {
+  margin-bottom: 4%;
+}
+
+.gallary .wrapper a {
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: .5s ease-in;
+}
+
+/* gallary Styling End From Here */
+/* Locations Styling Start From Here */
+.locations {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.locations .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations .wrapper .malesuada {
+  padding-right: 4%;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  flex-basis: 43%;
+}
+
+.locations .wrapper .malesuada h3 {
+  color: #666666;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.locations .wrapper .malesuada p {
+  margin: 32px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.locations .wrapper .malesuada form {
+  display: flex;
+  flex-direction: column;
+}
+
+.locations .wrapper .malesuada form .input {
+  display: flex;
+}
+
+.locations .wrapper .malesuada form .input .form-group:nth-child(2) {
+  margin-left: 6%;
+}
+
+.locations .wrapper .malesuada form .input input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 0;
+}
+
+.locations .wrapper .malesuada form .input input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 0;
+}
+
+.locations .wrapper .malesuada form .textarea {
+  margin: 5% 0;
+}
+
+.locations .wrapper .malesuada form .textarea textarea {
+  min-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 0;
+}
+
+.locations .wrapper .malesuada form .button button {
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: .5s ease-in;
+}
+
+.locations .wrapper ul {
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 47%;
+}
+
+.locations .wrapper ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.locations .wrapper ul li:nth-of-type(1) a::before {
+  content: "\f099";
+}
+
+.locations .wrapper ul li:nth-of-type(2) a::before {
+  content: "\f09a";
+}
+
+.locations .wrapper ul li:nth-of-type(3) a::before {
+  content: "\f16d";
+}
+
+.locations .wrapper ul li:nth-of-type(4) a::before {
+  content: "\f0e0";
+}
+
+.locations .wrapper ul li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.locations .wrapper ul li a::before {
+  color: #49bd8b;
+  font-family: "fontawesome";
+}
+
+.locations .wrapper ul li address {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.locations .wrapper ul li address span:nth-of-type(1)::before {
+  content: "\f015";
+  color: #49bd8b;
+  font-family: "fontawesome";
+}
+
+.locations .wrapper ul li address span:nth-of-type(2) {
+  margin-left: 4%;
+}
+
+/* Locations Styling End From Here */
+/*=================================
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  padding: 50px 0;
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+footer span {
+  text-transform: uppercase;
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
+/*media query starts*/
+/* Hover Effects */
+@media only screen and (min-width: 1024px) {
+  header .wrapper nav ul a:hover {
+    background-color: #723e78;
+    color: #fff;
+  }
+  .banner .wrapper .banner-text a:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: #723e78;
+  }
+  .manga .wrapper div a:hover {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+  }
+  .gallary .wrapper a:hover {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+  }
+  .gallary .wrapper li div a:hover {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+  }
+  .locations .wrapper .malesuada form .button button:hover {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+  }
+}
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .banner .wrapper {
+    flex-direction: column;
+  }
+  .banner .wrapper h2 {
+    padding-bottom: 4%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .banner .wrapper .banner-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  .manga .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .manga .wrapper div {
+    padding-bottom: 3%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .manga .wrapper div p {
+    padding-right: 0;
+  }
+  .manga .wrapper ul {
+    margin-left: 0;
+  }
+  .gallary .wrapper ul li {
+    flex-direction: column;
+    text-align: center;
+  }
+  .gallary .wrapper ul li div {
+    margin: 2% 0;
+  }
+  .locations .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .locations .wrapper h3 {
+    text-align: center;
+  }
+  .locations .wrapper p {
+    text-align: center;
+  }
+  .locations .wrapper .malesuada {
+    padding-bottom: 2%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .locations .wrapper .malesuada form .input {
+    flex-direction: column;
+  }
+  .locations .wrapper .malesuada form .input .form-group:nth-child(2) {
+    margin: 4% 0 0;
+  }
+  .locations .wrapper .malesuada form .textarea textarea {
+    min-width: 89%;
+    padding: 10px 14px;
+  }
+  .locations .wrapper ul {
+    margin: 5% 0 0;
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  body.active {
+    position: fixed;
+    overflow: hidden;
+  }
+  header .wrapper .menu nav .hamburger {
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    z-index: 1;
+  }
+  header .wrapper .menu nav .nav-links {
+    display: none;
+  }
+  header .wrapper .menu.active nav {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #666666;
+  }
+  header .wrapper .menu.active nav .hamburger::before {
+    content: "\f00d";
+  }
+  header .wrapper .menu.active nav .nav-links {
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header .wrapper .menu.active nav .nav-links li {
+    margin: 35px;
+  }
+  header .wrapper .menu.active nav .nav-links li a {
+    color: #f0f0f0;
+  }
+  .banner .wrapper h2 {
+    font-size: 25px;
+  }
+  .manga .wrapper div h3 {
+    font-size: 20px;
+  }
+  .gallary .wrapper ul li div h4 {
+    font-size: 17px;
+  }
+  .gallary .wrapper ul li div a {
+    font-size: 12px;
+  }
+  .gallary .wrapper a {
+    font-size: 12px;
+  }
+  .locations .wrapper .malesuada h3 {
+    font-size: 20px;
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+  }
+  header .wrapper nav ul a {
+    font-size: 14px;
+  }
+  .banner .wrapper h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .banner .wrapper .banner-text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .banner .wrapper .banner-text a {
+    padding: 6px 20px;
+    font-size: 11px;
+  }
+  .manga .wrapper div h3 {
+    font-size: 16px;
+  }
+  .manga .wrapper div p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .manga .wrapper div a {
+    padding: 6px 20px;
+    font-size: 11px;
+  }
+  .manga .wrapper ul li:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .manga .wrapper ul li p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .gallary .wrapper ul li img {
+    width: 100%;
+  }
+  .gallary .wrapper ul li div h4 {
+    font-size: 14px;
+  }
+  .gallary .wrapper ul li div p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .gallary .wrapper ul li div a {
+    padding: 6px 20px;
+    font-size: 11px;
+  }
+  .gallary .wrapper a {
+    padding: 6px 20px;
+    font-size: 11px;
+  }
+  .locations .wrapper .malesuada h3 {
+    font-size: 16px;
+  }
+  .locations .wrapper .malesuada p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .locations .wrapper .malesuada form .button button {
+    padding: 6px 20px;
+    font-size: 11px;
+  }
+  .locations .wrapper ul li a {
+    font-size: 14px;
+  }
+  .locations .wrapper ul li address {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}

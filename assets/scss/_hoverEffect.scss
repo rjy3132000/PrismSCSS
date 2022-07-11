@@ -1,0 +1,73 @@
+$bgColor: #723e78;
+
+@mixin  hover {
+    border: 1px solid transparent;
+    background-color: rgba(0,0,0,.6);
+    color: #f0f0f0;
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        .wrapper {
+            nav {
+                ul {
+                    a:hover {
+                        background-color: $bgColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        .wrapper {
+            .banner-text {
+                a:hover {
+                    outline: 1px solid rgba(255,255,255,.6);
+                    background-color: $bgColor;
+                }
+            }
+        }
+    }
+
+    .manga {
+        .wrapper {
+            div {
+                a:hover {
+                    @include hover;
+                }
+            }
+        }
+    }
+
+    .gallary {
+        .wrapper {
+            a:hover {
+                @include hover;
+            }
+
+            li {
+                div {
+                    a:hover {
+                        @include hover;
+                    }
+                }
+            }
+        }
+    }
+
+    .locations {
+        .wrapper {
+            .malesuada {
+                form {
+                    .button {
+                        button:hover {
+                            @include hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
